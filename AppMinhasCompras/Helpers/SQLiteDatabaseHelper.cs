@@ -1,10 +1,11 @@
-﻿using AppMinhasCompras.Models;
+﻿using AppMinhasCompras.Interface;
+using AppMinhasCompras.Models;
 using SQLite;
 using System.Text;
 
 namespace AppMinhasCompras.Helpers;
 
-public class SQLiteDatabaseHelper
+public class SQLiteDatabaseHelper : ISQLiteDatabaseHelper
 {
     private readonly SQLiteAsyncConnection _connection;
 
