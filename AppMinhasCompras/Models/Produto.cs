@@ -9,4 +9,6 @@ public class Produto
     public string? Descricao { get; set; }
     public double Preco { get; set; }
     public double Quantidade { get; set; }
+
+    public double ValorTotal { get => Quantidade * Preco; }
 }
