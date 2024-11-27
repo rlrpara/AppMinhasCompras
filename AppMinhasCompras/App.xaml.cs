@@ -1,4 +1,6 @@
-﻿namespace AppMinhasCompras
+﻿using AppMinhasCompras.Views;
+
+namespace AppMinhasCompras
 {
     public partial class App : Application
     {
@@ -6,7 +8,8 @@
         {
             InitializeComponent();
 
-            MainPage = new AppShell();
+            //MainPage = new AppShell();
+            MainPage = new NavigationPage(new ListaProduto());
         }
     }
 }
